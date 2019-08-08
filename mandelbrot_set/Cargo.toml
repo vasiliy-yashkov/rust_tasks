@@ -1,0 +1,22 @@
+[package]
+name = "mandelbrot_set"
+version = "0.1.0"
+authors = ["Vasiliy Yashkov <vasiliy.yashkov@gmail.ru>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# To work with complex numbers
+num = "0.2.0"
+image = "0.22.0"
+# The crossbeam crate contains a number of 
+# useful competition tools, including scoped thread.
+crossbeam = "0.7.2"
+num_cpus = "1.10.1"
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
