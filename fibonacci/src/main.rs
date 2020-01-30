@@ -18,7 +18,7 @@ fn main() {
             break;
         }
 
-        let mut n = i32::from_str(&input).expect("Error parsing i32 number");
+        let n = i32::from_str(&input).expect("Error parsing i32 number");
 
         println!("Fibonacci is {}", fib::fib(n));
     }

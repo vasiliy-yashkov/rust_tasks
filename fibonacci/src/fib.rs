@@ -24,7 +24,7 @@ pub fn fib(n: i32) -> i64 {
     let mut num1: i64 = 0;
     let mut num2: i64 = 1;
 
-    for x in 2..n {
+    for _x in 2..n {
         let res = num1 + num2;
         num1 = num2;
         num2 = res;
